@@ -1,0 +1,22 @@
+{
+  "name": "@types/rmwc",
+  "version": "0.0.1",
+  "description": "Typescript definition for rmwc",
+  "main": "",
+  "scripts": {},
+  "keywords": [
+    "Typescript",
+    "rmwc",
+    "React",
+    "Material",
+    "Web",
+    "Components"
+  ],
+  "author": "Nicolas Cohen",
+  "license": "MIT",
+  "typeScriptVersion": "2.3",
+  "devDependencies": {
+    "@types/react": "^16.0.24",
+    "@types/react-dom": "^16.0.3"
+  }
+}
