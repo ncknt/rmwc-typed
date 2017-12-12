@@ -15,12 +15,12 @@ declare namespace Dialog {
         /** Whether or not the Dialog is showing. */
         open: boolean,
         /** Callback for when the accept Button is pressed. */
-        onAccept: (evt: Event) => any,
+        onAccept?: (evt: Event) => any,
         /** Callback for when the Dialog was closed without acceptance. */
-        onCancel: (evt: Event) => any,
+        onCancel?: (evt: Event) => any,
         /** Callback for when the Dialog closes. */
-        onClose: (evt: Event) => any,
-        apiRef: (apiInstance: Object) => any
+        onClose?: (evt: Event) => any,
+        // apiRef?: (apiInstance: Object) => any
     }
 
     export interface DefaultDialogTemplateProps extends RMWC.RMWCTagProps {
