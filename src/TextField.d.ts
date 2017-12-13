@@ -18,7 +18,13 @@ declare namespace TextField {
         /** Add a trailing icon. */
         withTrailingIcon?: React.ReactNode,
         /** By default, props spread to the input. These props are for the component's root container. */
-        rootProps?: Object
+        rootProps?: Object,
+        /** Makes a multiline TextField. */
+        textarea?: boolean,
+        /** Makes the TextField fullwidth. */
+        fullwidth?: boolean,
+        /** Makes the TextField have a visual box. */
+        box?: boolean
     }
 }
 
