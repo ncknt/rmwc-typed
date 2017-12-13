@@ -2,7 +2,7 @@ import * as React from 'react'
 import { RMWC } from './Base'
 
 declare namespace LinearProgress {
-    export interface LinearProgressProps extends RMWC.RMWCTagProps {
+    export interface LinearProgressProps extends RMWC.SimpleBaseProps<LinearProgress> {
         /** Progress float percentage between 0 and 1. */
         progress?: number | string,
         /** A Progress buffer float percentage between 0 and 1. */
@@ -14,4 +14,4 @@ declare namespace LinearProgress {
     }
 }
 
-export declare class LinearProgress extends React.Component<LinearProgress.LinearProgressProps & React.HTMLProps<LinearProgress>> { }
+export declare class LinearProgress extends React.Component<LinearProgress.LinearProgressProps> { }

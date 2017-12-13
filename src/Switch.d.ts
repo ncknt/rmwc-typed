@@ -3,7 +3,7 @@ import { RMWC } from './Base'
 
 
 declare namespace Switch {
-    export interface SwitchProps extends RMWC.RMWCTagProps {
+    export interface SwitchProps extends RMWC.SimpleBaseProps<Switch> {
         /** A DOM ID for the toggle. */
         id?: string,
         /** Disables the control. */
@@ -15,4 +15,4 @@ declare namespace Switch {
     }
 }
 
-export declare class Switch extends React.Component<Switch.SwitchProps & React.HTMLProps<Switch>> { }
+export declare class Switch extends React.Component<Switch.SwitchProps> { }

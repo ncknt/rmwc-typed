@@ -9,13 +9,14 @@ export declare namespace RMWC {
         theme?: string | string[];
     }
 
-    export type SimpleBaseProps<T> = RMWCTagProps & React.HTMLProps<T>;
+    export interface SimpleBaseProps<T> extends RMWCTagProps, React.HTMLAttributes<T> {
+    }
 
     export interface RippleTagProps {
         ripple?: boolean;
     }
 
-    export type UseProps<T> = React.HTMLProps<T> & {
+    export interface UseProps<T> extends React.HTMLAttributes<T> {
         use?: string
     }
 }

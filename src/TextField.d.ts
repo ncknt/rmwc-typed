@@ -2,11 +2,11 @@ import * as React from 'react'
 import { RMWC } from './Base'
 
 declare namespace TextField {
-    export interface TextFieldHelpTextProps extends RMWC.RMWCTagProps {
+    export interface TextFieldHelpTextProps extends RMWC.SimpleBaseProps<TextFieldHelpText> {
         persistent?: boolean,
         validationMsg?: boolean
     }
-    export interface TextFieldProps extends RMWC.RMWCTagProps {
+    export interface TextFieldProps extends RMWC.SimpleBaseProps<TextField> {
         /** A ref for the native input. */
         inputRef?: React.Ref<any>,
         /** Disables the input. */
@@ -23,5 +23,5 @@ declare namespace TextField {
 }
 
 export declare class TextFieldIcon extends React.Component<RMWC.UseProps<TextFieldIcon>> { }
-export declare class TextFieldHelpText extends React.Component<TextField.TextFieldHelpTextProps & React.HTMLProps<TextFieldHelpText>> { }
-export declare class TextField extends React.Component<TextField.TextFieldProps & React.HTMLProps<TextField>> { }
+export declare class TextFieldHelpText extends React.Component<TextField.TextFieldHelpTextProps> { }
+export declare class TextField extends React.Component<TextField.TextFieldProps> { }

@@ -2,7 +2,7 @@ import * as React from 'react'
 import { RMWC } from './Base'
 
 declare namespace Typography {
-    export interface TypographyProps extends RMWC.RMWCTagProps {
+    export interface TypographyProps extends RMWC.SimpleBaseProps<Typography> {
         /* prettier-ignore */
         /** The typography style.*/
         use: 'display4' | 'display3' | 'display2' | 'display1' | 'headline' | 'title' | 'subheading2' | 'subheading1' | 'body2' | 'body1' | 'caption' | 'button',
@@ -11,4 +11,4 @@ declare namespace Typography {
     }
 }
 
-export declare class Typography extends React.Component<Typography.TypographyProps & React.HTMLProps<Typography>> { }
+export declare class Typography extends React.Component<Typography.TypographyProps> { }

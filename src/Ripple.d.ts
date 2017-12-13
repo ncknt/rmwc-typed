@@ -2,7 +2,7 @@ import * as React from 'react'
 import { RMWC } from './Base'
 
 declare namespace Ripple {
-    export interface RippleProps {
+    export interface RippleProps extends React.HTMLAttributes<Ripple> {
         /** Uses the primary palette. */
         primary?: boolean,
         /** Uses the accent palette. */
@@ -12,4 +12,4 @@ declare namespace Ripple {
     }
 }
 
-export declare class Ripple extends React.Component<Ripple.RippleProps & React.HTMLProps<Ripple>> { }
+export declare class Ripple extends React.Component<Ripple.RippleProps> { }

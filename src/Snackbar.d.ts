@@ -2,17 +2,17 @@ import * as React from 'react'
 import { RMWC } from './Base'
 
 declare namespace Snackbar {
-    export interface SnackbarProps extends RMWC.RMWCTagProps {
+    export interface SnackbarProps extends RMWC.SimpleBaseProps<Snackbar> {
         /** Show the Snackbar. */
         show?: boolean,
         /** A callback thats fired when the Snackbar closes. */
-        onClose?: () => any,
+        onClose?(): any,
         /** A string or other renderable JSX to be used as the message body. */
         message?: React.ReactNode,
         /** Milliseconds to show the Snackbar for. */
         timeout?: number,
         /** Callback that fires when action is pressed. The actionText property must be set to use this. */
-        actionHandler?: () => any,
+        actionHandler?(): any,
         /** Label for the action button. */
         actionText?: React.ReactNode,
         /** Lets the Snackbar text overflow onto multiple lines. */
@@ -24,4 +24,4 @@ declare namespace Snackbar {
     }
 }
 
-export declare class Snackbar extends React.Component<Snackbar.SnackbarProps & React.HTMLProps<Snackbar>> { }
+export declare class Snackbar extends React.Component<Snackbar.SnackbarProps> { }

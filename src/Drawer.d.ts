@@ -2,7 +2,7 @@ import * as React from 'react'
 import { RMWC } from './Base'
 
 declare namespace Drawer {
-    export interface PersistentDrawerProps extends RMWC.RMWCTagProps {
+    export interface PersistentDrawerProps extends RMWC.SimpleBaseProps<PersistentDrawer> {
         /** Opens or closes the Drawer. */
         open: boolean,
         /** Callback that fires when the Drawer is closed. */
@@ -11,7 +11,7 @@ declare namespace Drawer {
         onOpen?: (evt: Event) => any
     }
 
-    export interface TemporaryDrawerProps extends RMWC.RMWCTagProps {
+    export interface TemporaryDrawerProps extends RMWC.SimpleBaseProps<TemporaryDrawer> {
         /** Opens or closes the Drawer. */
         open: boolean,
         /** Callback that fires when the Drawer is closed. */
@@ -26,8 +26,8 @@ export declare class PermanentDrawerContent extends React.Component<RMWC.SimpleB
 
 export declare class PersistentDrawerHeader extends React.Component<RMWC.SimpleBaseProps<PersistentDrawerHeader>> { }
 export declare class PersistentDrawerContent extends React.Component<RMWC.SimpleBaseProps<PersistentDrawerContent>> { }
-export declare class PersistentDrawer extends React.Component<Drawer.PersistentDrawerProps & React.HTMLProps<PersistentDrawer>> { }
+export declare class PersistentDrawer extends React.Component<Drawer.PersistentDrawerProps> { }
 
 export declare class TemporaryDrawerHeader extends React.Component<RMWC.SimpleBaseProps<TemporaryDrawerHeader>> { }
 export declare class TemporaryDrawerContent extends React.Component<RMWC.SimpleBaseProps<TemporaryDrawerContent>> { }
-export declare class TemporaryDrawer extends React.Component<Drawer.TemporaryDrawerProps & React.HTMLProps<TemporaryDrawer>> { }
+export declare class TemporaryDrawer extends React.Component<Drawer.TemporaryDrawerProps> { }

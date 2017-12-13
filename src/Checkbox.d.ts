@@ -2,7 +2,7 @@ import * as React from 'react'
 import { RMWC } from './Base'
 
 declare namespace Checkbox {
-    export interface CheckboxProps extends RMWC.RMWCTagProps {
+    export interface CheckboxProps extends RMWC.SimpleBaseProps<Checkbox> {
         /** A DOM ID for the toggle. */
         id?: string,
         /** Disables the control. */
@@ -15,4 +15,4 @@ declare namespace Checkbox {
         label?: string
     }
 }
-export declare class Checkbox extends React.Component<Checkbox.CheckboxProps & React.HTMLProps<Checkbox>> { }
+export declare class Checkbox extends React.Component<Checkbox.CheckboxProps> { }

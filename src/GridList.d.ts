@@ -2,7 +2,7 @@ import * as React from 'react'
 import { RMWC } from './Base'
 
 declare namespace GridList {
-    export interface GridListProps extends RMWC.RMWCTagProps {
+    export interface GridListProps extends RMWC.SimpleBaseProps<GridList> {
         /** Use a 1px gutter. */
         tileGutter1: boolean,
         /** Move the caption to the top of the card. */
@@ -33,4 +33,4 @@ export declare class GridTileTitle extends React.Component<RMWC.SimpleBaseProps<
 
 export declare class GridTileTitleSupportText extends React.Component<RMWC.SimpleBaseProps<GridTileTitleSupportText>> { }
 
-export declare class GridList extends React.Component<GridList.GridListProps & React.HTMLProps<GridList>> { }
+export declare class GridList extends React.Component<GridList.GridListProps> { }

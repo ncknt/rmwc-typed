@@ -2,7 +2,7 @@ import * as React from 'react'
 import { RMWC } from './Base'
 
 declare namespace IconToggle {
-    export interface IconToggleProps extends RMWC.RMWCTagProps {
+    export interface IconToggleProps extends RMWC.SimpleBaseProps<IconToggle> {
         onChange(evt: Object): boolean | Event | undefined;
         on: Object;
         off: Object;
@@ -11,4 +11,4 @@ declare namespace IconToggle {
 
 
 }
-export declare class IconToggle extends React.Component<IconToggle.IconToggleProps & React.HTMLProps<IconToggle>> { }
+export declare class IconToggle extends React.Component<IconToggle.IconToggleProps> { }

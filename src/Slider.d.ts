@@ -2,9 +2,10 @@ import * as React from 'react'
 import { RMWC } from './Base'
 
 declare namespace Slider {
+    // Cannot assign React.HTMLAttributes because onChange signature is incompatible
     export interface SliderProps extends RMWC.RMWCTagProps {
         /** A callback that takes an event with event.target.value set to the Slider's value. */
-        onChange?: (evt: Event) => any,
+        onChange?(evt: Event): any,
         /** The value of the Slider. */
         value?: number | string,
         /** The minimum value of the Slider. */
@@ -22,4 +23,4 @@ declare namespace Slider {
     }
 }
 
-export declare class Slider extends React.Component<Slider.SliderProps & React.HTMLProps<Slider>> { }
+export declare class Slider extends React.Component<Slider.SliderProps> { }

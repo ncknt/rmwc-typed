@@ -2,7 +2,7 @@ import * as React from 'react'
 import { RMWC } from './Base'
 
 declare namespace Select {
-    export interface SelectProps extends RMWC.RMWCTagProps {
+    export interface SelectProps extends RMWC.SimpleBaseProps<Select> {
         /** An array of values or a map of {value: "label"}. Arrays will be converted to a map of {value: value}. */
         options: Object | any[],
         /** A label for the form control. */
@@ -14,4 +14,4 @@ declare namespace Select {
     }
 }
 
-export declare class Select extends React.Component<Select.SelectProps & React.HTMLProps<Select>> { }
+export declare class Select extends React.Component<Select.SelectProps> { }

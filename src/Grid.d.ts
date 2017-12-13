@@ -2,7 +2,7 @@ import * as React from 'react'
 import { RMWC } from './Base'
 
 declare namespace Grid {
-    export interface GridCellProps extends RMWC.RMWCTagProps {
+    export interface GridCellProps extends RMWC.SimpleBaseProps<GridCell> {
         /** A generic span value for all screen sizes. */
         span?: string | number,
         /** A span value for phone screen sizes. */
@@ -14,5 +14,5 @@ declare namespace Grid {
     }
 }
 
-export declare class GridCell extends React.Component<Grid.GridCellProps & React.HTMLProps<GridCell>> { }
+export declare class GridCell extends React.Component<Grid.GridCellProps> { }
 export declare class Grid extends React.Component<RMWC.SimpleBaseProps<Grid>> { }

@@ -2,16 +2,16 @@ import * as React from 'react'
 import { RMWC } from './Base'
 
 declare namespace Dialog {
-    export interface DialogRootProps extends RMWC.RMWCTagProps {
+    export interface DialogRootProps extends RMWC.SimpleBaseProps<DialogRoot> {
         role?: any;
     }
-    export interface DialogFooterButtonProps extends RMWC.RMWCTagProps {
+    export interface DialogFooterButtonProps extends RMWC.SimpleBaseProps<DialogFooter> {
         /* Make it an accept Button. */
         accept?: boolean,
         /* Make it a cancel button. */
         cancel?: boolean
     }
-    export interface DialogProps extends RMWC.RMWCTagProps {
+    export interface DialogProps extends RMWC.SimpleBaseProps<Dialog> {
         /** Whether or not the Dialog is showing. */
         open: boolean,
         /** Callback for when the accept Button is pressed. */
@@ -23,7 +23,7 @@ declare namespace Dialog {
         // apiRef?: (apiInstance: Object) => any
     }
 
-    export interface DefaultDialogTemplateProps extends RMWC.RMWCTagProps {
+    export interface DefaultDialogTemplateProps extends React.DOMAttributes<DefaultDialogTemplate>, RMWC.RMWCTagProps {
         /** A title for the default Dialog template. */
         title?: React.ReactNode,
         /** Additional Dialog header content for the default Dialog template. */
@@ -41,14 +41,14 @@ declare namespace Dialog {
     }
 }
 
-export declare class DialogRoot extends React.Component<Dialog.DialogRootProps & React.HTMLProps<DialogRoot>> { }
+export declare class DialogRoot extends React.Component<Dialog.DialogRootProps> { }
 export declare class DialogBackdrop extends React.Component<RMWC.SimpleBaseProps<DialogBackdrop>> { }
 export declare class DialogSurface extends React.Component<RMWC.SimpleBaseProps<DialogSurface>> { }
 export declare class DialogHeader extends React.Component<RMWC.SimpleBaseProps<DialogHeader>> { }
 export declare class DialogHeaderTitle extends React.Component<RMWC.SimpleBaseProps<DialogHeaderTitle>> { }
 export declare class DialogBody extends React.Component<RMWC.SimpleBaseProps<DialogBody>> { }
 export declare class DialogFooter extends React.Component<RMWC.SimpleBaseProps<DialogFooter>> { }
-export declare class DialogFooterButton extends React.Component<Dialog.DialogFooterButtonProps & React.HTMLProps<DialogFooterButton>> { }
-export declare class Dialog extends React.Component<Dialog.DialogProps & React.HTMLProps<Dialog>> { }
-export declare class DefaultDialogTemplate extends React.Component<Dialog.DefaultDialogTemplateProps & React.HTMLProps<DefaultDialogTemplate>> { }
+export declare class DialogFooterButton extends React.Component<Dialog.DialogFooterButtonProps> { }
+export declare class Dialog extends React.Component<Dialog.DialogProps> { }
+export declare class DefaultDialogTemplate extends React.Component<Dialog.DefaultDialogTemplateProps> { }
 

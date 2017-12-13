@@ -2,7 +2,7 @@ import * as React from 'react'
 import { RMWC } from './Base'
 
 declare namespace Menu {
-    export interface MenuProps extends RMWC.RMWCTagProps {
+    export interface MenuProps extends RMWC.SimpleBaseProps<Menu> {
         /** Whether or not the Menu is open. */
         open?: boolean,
         /** Callback that fires when the Menu closes. */
@@ -13,4 +13,4 @@ declare namespace Menu {
 }
 
 export declare class MenuItem extends React.Component<RMWC.SimpleBaseProps<MenuItem>> { }
-export declare class Menu extends React.Component<Menu.MenuProps & React.HTMLProps<Menu>> { }
+export declare class Menu extends React.Component<Menu.MenuProps> { }
