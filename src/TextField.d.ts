@@ -6,7 +6,7 @@ declare namespace TextField {
         persistent?: boolean,
         validationMsg?: boolean
     }
-    export interface TextFieldProps extends RMWC.SimpleBaseProps<TextField> {
+    export interface TextFieldProps extends RMWC.RMWCTagProps, React.InputHTMLAttributes<TextField> {
         /** A ref for the native input. */
         inputRef?: React.Ref<any>,
         /** Disables the input. */
