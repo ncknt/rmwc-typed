@@ -40,4 +40,4 @@ export declare class CardActions extends React.Component<Card.CardActionsProps> 
 export declare class CardMedia extends React.Component<RMWC.SimpleBaseProps<CardMedia>> { }
 export declare class CardMediaItem extends React.Component<RMWC.SimpleBaseProps<CardMediaItem>> { }
 export declare class CardHorizontalBlock extends React.Component<RMWC.SimpleBaseProps<CardHorizontalBlock>> { }
-export declare class CardAction extends React.Component<CardActionProps> { }
+export declare class CardAction extends React.Component<Card.CardActionProps> { }
