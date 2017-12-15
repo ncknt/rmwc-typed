@@ -10,7 +10,9 @@ declare namespace Select {
         /** Placeholder text for the form control. */
         placeholder?: string,
         /** Disables the form control. */
-        disabled?: boolean
+        disabled?: boolean,
+        /** Selected value */
+        value?: string
     }
 }
 
