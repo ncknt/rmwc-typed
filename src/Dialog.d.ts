@@ -21,6 +21,8 @@ declare namespace Dialog {
         /** Callback for when the Dialog closes. */
         onClose?: (evt: Event) => any,
         // apiRef?: (apiInstance: Object) => any
+        /** Body content for the default Dialog template. */
+        body?: React.ReactNode
     }
 
     export interface DefaultDialogTemplateProps extends React.DOMAttributes<DefaultDialogTemplate>, RMWC.RMWCTagProps {
