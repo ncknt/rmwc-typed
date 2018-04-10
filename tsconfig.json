@@ -1,6 +1,6 @@
 {
-    "files": [
-        "index.d.ts"
+    "include": [
+        "*.d.ts"
     ],
     "compilerOptions": {
         "module": "commonjs",
@@ -8,18 +8,9 @@
             "es6",
             "dom"
         ],
-        "noImplicitAny": false,
+        "noImplicitAny": true,
         "noImplicitThis": true,
-        "strictNullChecks": false,
-        "strictFunctionTypes": false,
-        "baseUrl": "../",
-        "jsx": "react",
-        "experimentalDecorators": true,
-        "typeRoots": [
-            "../"
-        ],
-        "types": [],
-        "noEmit": true,
-        "forceConsistentCasingInFileNames": true
+        "strictNullChecks": true,
+        "noEmit": true
     }
 }
