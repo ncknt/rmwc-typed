@@ -6,19 +6,19 @@ import {
     UseProps
 } from './Base'
 
-    export interface ToolbarProps extends SimpleBaseProps<Toolbar> {
-        fixed?: boolean;
-        waterfall?: boolean;
-        fixedLastrowOnly?: boolean;
-        flexible?: boolean;
-        flexibleDefaultBehavior?: boolean;
-    }
+export interface ToolbarProps extends SimpleBaseProps<Toolbar> {
+    fixed?: boolean;
+    waterfall?: boolean;
+    fixedLastrowOnly?: boolean;
+    flexible?: boolean;
+    flexibleDefaultBehavior?: boolean;
+}
 
-    export interface ToolbarSectionProps extends SimpleBaseProps<ToolbarSection> {
-        alignStart?: boolean;
-        alignEnd?: boolean;
-        shrinkToFit?: boolean;
-    }
+export interface ToolbarSectionProps extends SimpleBaseProps<ToolbarSection> {
+    alignStart?: boolean;
+    alignEnd?: boolean;
+    shrinkToFit?: boolean;
+}
 
 export class Toolbar extends Component<ToolbarProps> { }
 export class ToolbarRow extends Component<SimpleBaseProps<ToolbarRow>> { }

@@ -16,10 +16,12 @@
   "license": "MIT",
   "typeScriptVersion": "2.3",
   "devDependencies": {
-    "@types/react": "^16.3.5",
-    "@types/react-dom": "^16.0.4",
-    "react": "^16.3.1",
-    "react-dom": "^16.3.1",
+    "@types/react": "^16.3.11",
+    "@types/react-dom": "^16.0.5",
+    "material-components-web": "^0.34.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "rmwc": "^1.5.3",
     "tslint": "^5.9.1"
   }
 }
