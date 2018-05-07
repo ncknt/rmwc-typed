@@ -7,7 +7,7 @@ import {
     RippleTagProps
 } from './Base'
 
-export interface ButtonBaseProps extends RMWCTagProps, RippleTagProps, ButtonHTMLAttributes<Button> {
+export interface ButtonProps extends RMWCTagProps, RippleTagProps, ButtonHTMLAttributes<Button> {
     dense?: boolean;
     raised?: boolean;
     compact?: boolean;
@@ -15,4 +15,4 @@ export interface ButtonBaseProps extends RMWCTagProps, RippleTagProps, ButtonHTM
     stroked?: boolean;
 }
 
-export class Button extends Component<ButtonBaseProps> { }
+export class Button extends Component<ButtonProps> { }
