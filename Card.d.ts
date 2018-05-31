@@ -8,7 +8,7 @@ import {
 } from './Base'
 
 export interface CardProps extends SimpleBaseProps<Card> {
-    stroked?: boolean;
+    outlined?: boolean;
 }
 
 export interface CardMediaProps extends SimpleBaseProps<CardMedia> {
