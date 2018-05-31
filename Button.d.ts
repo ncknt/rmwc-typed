@@ -12,7 +12,7 @@ export interface ButtonProps extends RMWCTagProps, RippleTagProps, ButtonHTMLAtt
     raised?: boolean;
     compact?: boolean;
     unelevated?: boolean;
-    stroked?: boolean;
+    outlined?: boolean;
 }
 
 export class Button extends Component<ButtonProps> { }
