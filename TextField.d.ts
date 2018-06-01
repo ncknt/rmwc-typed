@@ -33,6 +33,10 @@ export interface TextFieldProps extends RMWCTagProps, InputHTMLAttributes<TextFi
     fullwidth?: boolean,
     /** Makes the TextField have a visual box. */
     box?: boolean
+    /** Makes the TextField visually invalid. This is sometimes automatically applied in cases where required or pattern is used. */
+    invalid?: boolean;
+    /** Outline the TextField */
+    outlined?: boolean;
 }
 
 export class TextFieldIcon extends Component<UseProps<TextFieldIcon>> { }
